@@ -5,8 +5,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
-      <Header />
-      <body>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
