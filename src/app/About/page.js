@@ -22,15 +22,15 @@ export default function page() {
         <p>
           We believe that movies and TV shows are not just a form of
           entertainment, but also a reflection of our culture, history, and
-          society. That's why we strive to curate a diverse selection of content
-          that speaks to different audiences and perspectives.
+          society. That&apos;s why we strive to curate a diverse selection of
+          content that speaks to different audiences and perspectives.
         </p>
         <p>
           At our platform, you can not only watch films but also find detailed
           information about each title, including ratings, reviews, trailers,
           and cast and crew information. We also provide personalized
           recommendations based on your viewing history and preferences, so you
-          can discover new content that you'll love.
+          can discover new content that you&apos;ll love.
         </p>
         <p>
           We are committed to providing the highest quality streaming

@@ -7,7 +7,7 @@ import DarkMode from './DarkMode';
 
 export default function Header() {
   return (
-    <div className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
+    <header className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
       <div className="flex">
         <MenuLtem title="Home" address="/" Icon={HiHome} />
 
@@ -25,6 +25,6 @@ export default function Header() {
           </h2>
         </Link>
       </div>
-    </div>
+    </header>
   );
 }
