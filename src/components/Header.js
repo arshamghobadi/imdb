@@ -3,6 +3,7 @@ import MenuLtem from './MenuLtem';
 import { HiHome } from 'react-icons/hi2';
 import { HiInformationCircle } from 'react-icons/hi2';
 import Link from 'next/link';
+import DarkMode from './DarkMode';
 
 export default function Header() {
   return (
@@ -13,7 +14,8 @@ export default function Header() {
         <MenuLtem title="About" address="/About" Icon={HiInformationCircle} />
       </div>
 
-      <div>
+      <div className="flex items-center space-x-4">
+        <DarkMode />
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2  rounded-lg mr-2">

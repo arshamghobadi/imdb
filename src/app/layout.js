@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Provider from '@/components/Provider';
 import './globals.css';
 
 export default function RootLayout({ children }) {
@@ -6,8 +7,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body suppressHydrationWarning={true}>
-        <Header />
-        {children}
+        <Provider>
+          <Header />
+          <div>{children}</div>
+        </Provider>
       </body>
     </html>
   );
