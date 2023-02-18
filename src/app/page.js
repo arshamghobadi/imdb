@@ -6,7 +6,6 @@ const base_url = process.env.BASE_URL;
 const inter = Inter({ subsets: ['latin'] });
 
 export default async function Home({ searchParams }) {
-  console.log(searchParams);
   const genre = searchParams.genre || 'fetchTrending';
   const res = await fetch(
     `${base_url}/${
