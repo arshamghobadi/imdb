@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .animate-curtain-slow {
+    animation: curtain-open-slow 0.8s ease-out;
+  }
+  @keyframes curtain-open-slow {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+}

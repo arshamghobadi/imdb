@@ -7,6 +7,15 @@ export default async function page({ params }) {
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`
   );
   const movie = await res.json();
+
+  if (movie.success === false) {
+    return (
+      <div className=" w-full">
+        <p className="text-center mt-8">Movie not found.</p>
+      </div>
+    );
+  }
+
   return (
     <div className=" w-full">
       <div
@@ -19,9 +28,9 @@ export default async function page({ params }) {
           }`}
           width={600}
           height={500}
-          alt={movie.title}
+          alt={movie.title || movie.name}
           className={
-            'sm:rounded-t-lg  group-hover:opacity-80 transition-opacity duration-200'
+            'sm:rounded-t-lg  group-hover:opacity-80 transition-opacity duration-200 max-h-96'
           }
           placeholder="blur"
           blurDataURL="/spinner.svg"

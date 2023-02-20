@@ -14,11 +14,11 @@ export default function Card({ result }) {
           src={`https://image.tmdb.org/t/p/original/${
             result.backdrop_path || result.poster_path
           }`}
-          width={500}
-          height={500}
-          alt={result.title}
+          width={800}
+          height={600}
+          alt={result.title || result.name}
           className={
-            'sm:rounded-t-lg  group-hover:opacity-80 transition-opacity duration-200'
+            'sm:rounded-t-lg  group-hover:opacity-80 transition-opacity duration-200 w-full h-auto'
           }
           placeholder="blur"
           blurDataURL="/spinner.svg"
