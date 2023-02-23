@@ -6,12 +6,26 @@
   .animate-curtain-slow {
     animation: curtain-open-slow 0.8s ease-out;
   }
+
+  .animate-curtain-close-slow {
+    animation: animate-curtain-close-slow 0.8s ease-in;
+  }
+
   @keyframes curtain-open-slow {
     from {
-      transform: scaleY(0);
+      transform: scaleY(1);
     }
     to {
+      transform: scaleY(0);
+    }
+  }
+
+  @keyframes animate-curtain-close-slow {
+    from {
       transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
     }
   }
 }
